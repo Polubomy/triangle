@@ -13,7 +13,8 @@ class Rtriangle:
 @pytest.mark.parametrize("data", [
     (3, 2, 3, 6, 1, 2),
     (0, 0, 3, 0, 0, 4),
-    (0, 0, 2, 0, 2, 2)
+    (0, 0, 2, 0, 2, 2),
+    (1, 2, 3, 1, 0, 6)
 ])
 def test_get_right_triangle(data):
 
