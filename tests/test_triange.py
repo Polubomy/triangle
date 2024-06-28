@@ -24,9 +24,9 @@ def test_get_right_triangle(data):
     side_2 = round(((triangle.x3 - triangle.x2)**2 + ((triangle.y3 - triangle.y2)**2))**0.5,2)
     side_3 = round(((triangle.x1 - triangle.x3)**2 + ((triangle.y1 - triangle.y3)**2))**0.5,2)
 
-    print(f'\n1 сторона**2 - {side_1**2}, side_2**2 + side_3**2 = {round(side_2 ** 2 + side_3**2,2)}')
-    print(f'2 сторона**2 - {side_2**2}, side_1**2 + side_3**2 = {round(side_1 ** 2 + side_3**2,2)}')
-    print(f'3 сторона**2 - {side_3**2}, side_1**2 + side_2**2 = {round(side_1 ** 2 + side_2**2,2)}')
+    # print(f'\n1 сторона**2 - {side_1**2}, side_2**2 + side_3**2 = {round(side_2 ** 2 + side_3**2,2)}')
+    # print(f'2 сторона**2 - {side_2**2}, side_1**2 + side_3**2 = {round(side_1 ** 2 + side_3**2,2)}')
+    # print(f'3 сторона**2 - {side_3**2}, side_1**2 + side_2**2 = {round(side_1 ** 2 + side_2**2,2)}')
 
     assert ((side_1**2 + side_2**2) == round(side_3**2)) \
            or ((side_1**2 + side_3**2) == round(side_2**2)) \
